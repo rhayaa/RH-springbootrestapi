@@ -28,21 +28,21 @@ public class Person {
     private Long idPerson;
 
     @Column(name = "NamaDepan" , length = 25, nullable = false)
-    @Length(message = "NAMA DEPAN Minimal 5 Maksimal 25 ",min = 5, max = 25)
+    @Length(message = "NAMA DEPAN Minimal 3 Maksimal 25 ",min = 3, max = 25)
     @NotNull(message = "NAMA DEPAN TIDAK BOLEH NULL")
     @NotEmpty(message = "NAMA DEPAN TIDAK BOLEH KOSONG")
     @NotBlank(message = "NAMA DEPAN TIDAK BOLEH BLANK")
     private String namaDepan;
 
     @Column(name = "NamaTengah" , length = 25, nullable = false)
-    @Length(message = "Nama Tengah Minimal 5 Maksimal 25 ",min = 3, max = 25)
+    @Length(message = "Nama Tengah Minimal 3 Maksimal 25 ",min = 3, max = 25)
     @NotNull(message = "NAMA DEPAN TIDAK BOLEH NULL")
     @NotEmpty(message = "NAMA DEPAN TIDAK BOLEH KOSONG")
     @NotBlank(message = "NAMA DEPAN TIDAK BOLEH BLANK")
     private String namaTengah;
 
     @Column(name = "NamaBelakang" , length = 25, nullable = false)
-    @Length(message = "NAMA BELAKANG  Minimal 5 Maksimal 25 ",min = 3, max = 25)
+    @Length(message = "NAMA BELAKANG  Minimal 3 Maksimal 25 ",min = 3, max = 25)
     @NotNull
     @NotEmpty
     @NotBlank

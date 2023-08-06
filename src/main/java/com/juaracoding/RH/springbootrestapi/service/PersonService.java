@@ -40,7 +40,6 @@ public class PersonService {
 
     private String[] strExceptionArr = new String[2];
 
-
     @Autowired
     public PersonService(PersonRepo personRepo) {
         strExceptionArr[0] = "PersonService";
@@ -69,7 +68,7 @@ public class PersonService {
         person.setModifiedBy(12L);
         person.setModifiedDate(new Date());
         Map<String,Object> map = new HashMap<String,Object>();
-        map.put("token","uhaiwehiuaywe");
+        map.put("token","berhasill");
 //        map.put("obj",person);
 
         return new ResponseHandler().
@@ -174,17 +173,17 @@ public class PersonService {
             list.add("Nama Belakang Tidak Boleh Blank");isValid = false;
         }
 
-        if(person.getNamaDepan().length()<6 && person.getNamaDepan().length()>26 )
+        if(person.getNamaDepan().length()<4 && person.getNamaDepan().length()>26 )
         {
-            list.add("Nama Depan Minimal 5 Maksimal 25 Karakter");isValid = false;
+            list.add("Nama Depan Minimal 3 Maksimal 25 Karakter");isValid = false;
         }
-        if(person.getNamaTengah().length()<6 && person.getNamaTengah().length()>26 )
+        if(person.getNamaTengah().length()<4 && person.getNamaTengah().length()>26 )
         {
-            list.add("Nama Tengah Minimal 5 Maksimal 25 Karakter");isValid = false;
+            list.add("Nama Tengah Minimal 3 Maksimal 25 Karakter");isValid = false;
         }
-        if(person.getNamaBelakang().length()<6 && person.getNamaBelakang().length()>26 )
+        if(person.getNamaBelakang().length()<4 && person.getNamaBelakang().length()>26 )
         {
-            list.add("Nama Depan Minimal 5 Maksimal 25 Karakter");isValid = false;
+            list.add("Nama Depan Minimal 3 Maksimal 25 Karakter");isValid = false;
         }
     }
 }
